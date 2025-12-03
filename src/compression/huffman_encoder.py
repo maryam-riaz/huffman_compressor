@@ -70,7 +70,7 @@ def compress_file(input_path, output_path):
     stats = {
         "original_size": os.path.getsize(input_path),
         "compressed_size": os.path.getsize(output_path),
-        "compression_ratio": round(os.path.getsize(input_path) / os.path.getsize(output_path), 3)
+        "compression_ratio": round(os.path.getsize(output_path) / os.path.getsize(input_path), 3)
     }
 
     return stats, root  # keep root for visualization
