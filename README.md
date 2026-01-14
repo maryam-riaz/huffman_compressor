@@ -52,6 +52,17 @@ src/
 
 ---
 
+## Dependencies
+
+This project uses external Python packages. All required dependencies are listed in `requirements.txt`.
+
+Install dependencies using:
+```
+pip install -r requirements.txt
+```
+
+---
+
 ## Compression Strategy
 
 The application uses **canonical Huffman coding** as its primary compression mechanism.
