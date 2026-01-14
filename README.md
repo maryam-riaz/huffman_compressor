@@ -26,7 +26,7 @@ While the application exposes a single compression workflow to the user, the und
 ## Architecture
 
 The system is structured into independent modules for compression, decoding, bitstream handling, visualization, and user interaction:
-
+```
 src/
 │
 ├── compression/
@@ -48,7 +48,7 @@ src/
 │ ├── visualizer_page.py
 │
 ├── main_app.py # Application entry point
-
+```
 
 ---
 
@@ -77,11 +77,11 @@ The Huffman tree itself is **not stored in the compressed file** and is used onl
 ---
 
 ## File Format
-
+```
 [Symbol Count (1 byte)]
 [Symbol][Code Length] × N
 [Padding Info + Compressed Bitstream]
-
+```
 
 This format minimizes metadata size while ensuring deterministic decoding.
 
